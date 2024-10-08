@@ -26,20 +26,21 @@ async function goToContact() {
 
 <template>
   <div>
-    <h1 class="anton font-medium text-4xl text-color-text">
-      Hello, bienvenue sur mon <span class="text-color-primary">Portfolio</span>
+    <h1 class="antonio font-medium text-4xl text-color-text text-[#163600]">
+      <span class="">Bibin Photography Magazine</span>
     </h1>
-    <p class="antonio font-medium text-sm mt-10 text-color-text">
-      Ullamco est sit consectetur deserunt veniam irure est laboris. Minim proident excepteur nulla. Nostrud et consectetur ex ipsum exercitation adipisicing sint minim. Fugiat est sit reprehenderit cillum cillum ad aute proident in ea mollit.
+    <p class="anton text-sm mt-10 text-color-text">
+      Bibin photography magazine is a digital platform dedicated to curating the finest works from photographers of Afghanistan, showcasing their unique artistry to the world. We aim to highlight the unseen and undiscovered talents of Afghanistan photographers, giving them a global platform to share their art and earn through their photography.
     </p>
+    <p class="anton text-sm mt-4">Photo Credit: Zabiullah Habibi</p>
     <Social />
     <NuxtLink
         @click="goToContact()"
         class="hidden lg:block cursor-pointer flex items-center hover:text-color-primary/50"
     >
-      <span class="sr-only">Go to the contact page</span>
+      <span class="anton sr-only">Go to the contact page</span>
       <Icon name="i-lucide-external-link" class="size-4 text-color-primary/90 text-center mr-2" />
-      <span class="antonio font-medium text-sm text-color-primary " >Me contacter</span>
+      <span class="font-medium text-sm text-color-primary " >Contact us</span>
     </NuxtLink>
   </div>
 </template>

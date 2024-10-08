@@ -69,8 +69,8 @@ async function sendForm() {
 <template>
   <div class="w-full">
     <Toaster position="top-left" />
-    <h1 class="anton p-5 font-medium text-4xl text-color-text text-end">Contact <span class="text-color-primary">Me</span></h1>
-    <h3 class="antonio text-sm text-color-text font-medium text-end">If you want to contact me, please fill out the form below</h3>
+    <h1 class="antonio p-5 font-medium text-4xl text-color-text text-end text-[#163600]">Contact Us</h1>
+    <h3 class="anton text-sm text-color-text text-end">If you want to contact us, please fill out the form below</h3>
     <form class="w-full flex flex-col justify-center items-end mt-5" @submit.prevent="sendForm()">
       <div class="relative w-full flex flex-col justify-center items-end">
         <input
@@ -138,7 +138,7 @@ async function sendForm() {
             class="hidden lg:block cursor-pointer flex items-center hover:text-color-primary/50 mt-10"
         >
           <span class="sr-only">Go to the Home page</span>
-          <span class="antonio font-medium text-sm text-color-primary " >Retour Acceuil</span>
+          <span class="antonio font-medium text-sm text-color-primary " >Back Home</span>
           <Icon name="i-lucide-external-link" class="size-4 text-color-primary/90 text-center ml-2" />
         </NuxtLink>
       </div>

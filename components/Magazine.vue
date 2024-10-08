@@ -3,24 +3,24 @@
 // Object with your magazine pages
 const pages = [
   {
+    id: 2,
+    title: 'Second Page',
+    path: '/23.jpg'
+  },
+  {
     id: 1,
     title: 'First Page',
-    path: '/firstPage.png'
+    path: '/24.jpg'
   },
   {
     id: 2,
     title: 'Second Page',
-    path: '/secondPage.png'
+    path: '/25.jpg'
   },
   {
-    id: 3,
-    title: 'Third Page',
-    path: '/thirdPage.png'
-  },
-  {
-    id: 4,
-    title: 'Fourth Page',
-    path: '/fourthPage.png'
+    id: 2,
+    title: 'Second Page',
+    path: '/26.jpg'
   }
 ]
 const pageActive = ref(1);

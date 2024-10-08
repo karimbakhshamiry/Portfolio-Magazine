@@ -1,20 +1,10 @@
 <script setup lang="ts">
 const socials = [
   {
-    name: "Linkedin",
-    link: "https://www.linkedin.com/in/johann-cavallucci/",
-    logo: "SvgoLinkedin",
-  },
-  {
     name: "Instagram",
-    link: "https://www.instagram.com/johann.cvl/",
+    link: "https://www.instagram.com/bibinmagazine/",
     logo: "SvgoInstagram",
-  },
-  {
-    name: "Github",
-    link: "https://github.com/cavalluccijohann",
-    logo: "SvgoGithub",
-  },
+  }
 ];
 </script>
 
@@ -31,7 +21,7 @@ const socials = [
       <span class="sr-only">Go to {{ social.name }} profile</span>
       <component
         :is="social.logo"
-        class="social-item size-6 transition-all duration-300 text-color-text hover:text-color-primary cursor-pointe"
+        class="social-item size-6 transition-all duration-300 text-color-text hover:text-color-primary cursor-pointer"
         :fontControlled="false"
         :alt="social.name + ' logo'"
         :aria-label="social.name + ' logo'"

@@ -1,20 +1,21 @@
-import { Resend } from "resend";
 import { H3Event } from "h3";
+import sgMail from "@sendgrid/mail";
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default defineEventHandler(async (event: H3Event) => {
   try {
     const body = await readBody(event);
-    console.log(body);
     const { email, phone, message, name } = body;
-    return await resend.emails.send({
-      from: "📩 - CONTACT PORTFOLIO <contact@johanncvl.com>",
-      to: ["24johann.cavallucci@gmail.com"],
-      subject: "New message from your porfolio",
+
+    const msg: any = {
+      to: "mohibali2017@gmail.com",
+      from: process.env.SENDGRID_FROM_EMAIL,
+      subject: "New Message from Photography Magazine",
       html: `
-      <p>Une nouvelle demande de contact a été envoyée depuis votre site.</p>
-      <p>Voici les informations de l'expéditeur :</p>
+      <p>You have received a new message from Bibin Photography Magazine</p>
+      <p>Following is the filled form data:</p>
       <ul>
         <li>Nom & Prenom : ${name}</li>
         <li>Email : ${email}</li>
@@ -22,7 +23,9 @@ export default defineEventHandler(async (event: H3Event) => {
         <li>Message : ${message}</li>
       </ul>
       `,
-    });
+    };
+
+    await sgMail.send(msg);
   } catch (error) {
     return { error };
   }

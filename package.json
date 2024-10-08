@@ -26,6 +26,7 @@
     "vue-sonner": "^1.1.2"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.1.173"
+    "@iconify-json/lucide": "^1.1.173",
+    "@sendgrid/mail": "^8.1.3"
   }
 }
