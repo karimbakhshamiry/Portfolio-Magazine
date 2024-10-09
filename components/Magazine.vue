@@ -174,12 +174,12 @@ function turnLeft() {
           class="cursor-pointer flex items-center justify-center hover:text-color-primary/50 m-1 rounded border-color-primary border-[1px] p-1"
           @click="turnLeft()">
         <Icon name="i-lucide-step-back" class="size-4 text-color-primary/90 text-center mr-2"/>
-        <span class="antonio font-medium text-sm text-color-primary ">Gauche</span>
+        <span class="antonio font-medium text-sm text-color-primary">Previous</span>
       </div>
       <div
           class="cursor-pointer flex items-center justify-center hover:text-color-primary/50 m-1 rounded border-color-primary border-[1px] p-1"
           @click="turnRight()">
-        <span class="antonio font-medium text-sm text-color-primary ">Droite</span>
+        <span class="antonio font-medium text-sm text-color-primary ">Next</span>
         <Icon name="i-lucide-step-forward" class="size-4 text-color-primary/90 text-center ml-2"/>
       </div>
     </div>
