@@ -4,12 +4,17 @@ const socials = [
     name: "Instagram",
     link: "https://www.instagram.com/bibinmagazine/",
     logo: "SvgoInstagram",
-  }
+  },
+  {
+    name: "X",
+    link: "https://x.com/BibinMagazine",
+    logo: "SvgoX",
+  },
 ];
 </script>
 
 <template>
-  <div class="flex gap-6 sm:gap-10 my-10 z-10">
+  <div class="flex gap-5 my-10 z-10">
     <NuxtLink
       v-for="social in socials"
       :key="social.name"

@@ -5,22 +5,22 @@ const pages = [
   {
     id: 2,
     title: 'Second Page',
-    path: '/23.jpg'
+    path: '/about_us.jpg'
   },
   {
     id: 1,
     title: 'First Page',
-    path: '/24.jpg'
+    path: '/mission.jpg'
   },
   {
     id: 2,
     title: 'Second Page',
-    path: '/25.jpg'
+    path: '/vision.jpg'
   },
   {
     id: 2,
     title: 'Second Page',
-    path: '/26.jpg'
+    path: '/follow_us.jpg'
   }
 ]
 const pageActive = ref(1);

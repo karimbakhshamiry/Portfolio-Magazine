@@ -26,13 +26,14 @@ async function goToContact() {
 
 <template>
   <div>
-    <h1 class="antonio font-medium text-4xl text-color-text text-[#163600]">
-      <span class="">Bibin Photography Magazine</span>
-    </h1>
+    <div class="antonio font-medium text-4xl text-color-text text-[#163600]">
+      <p class="mb-2">Bibin</p>
+      <p class="mb-2">Photography</p>
+      <p class="mb-2">Magazine</p>
+    </div>
     <p class="anton text-sm mt-10 text-color-text">
-      Bibin photography magazine is a digital platform dedicated to curating the finest works from photographers of Afghanistan, showcasing their unique artistry to the world. We aim to highlight the unseen and undiscovered talents of Afghanistan photographers, giving them a global platform to share their art and earn through their photography.
+      We encourage you to explore the world through fresh perspectives.
     </p>
-    <p class="anton text-sm mt-4">Photo Credit: Zabiullah Habibi</p>
     <Social />
     <NuxtLink
         @click="goToContact()"
